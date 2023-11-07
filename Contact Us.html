@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: #ff7e40;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.backbtn{
+    position: fixed;
+    display: inline-block;
+    padding: 8px;
+    color: #ff7455;
+    background-color: #030704c1;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    float: left;
+    margin: 5px 2px;
+    border-radius: 20%;
+    top: 3px;
+    right: 10px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Get in touch with Us</h2>
+<p>We are active to serve you better</p>
+
+<div class="container">
+    <a href="kohg.html"><button class="backbtn">《</button> </a>
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>To Visit us, Click the link-address on our Whatsapp profile</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <a href="https://wa.me/message/HPJ4EWD4JTHYP1" target="_blank"><img src="map.jpg" style="width:100%"></a>
+      <h3><i>#652 Ikwerri Road,Rumuokoro</i></h3>
+    </div>
+    <div class="column">
+      <form action="mailto:worlubliss9@gmail.com">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname" >Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Closest Bus Stop</label>
+        <select id="country" name="country">
+          <option value="australia">Ada George</option>
+          <option value="canada">Rumuokoro</option>
+          <option value="usa">Rumuosi</option>
+          <option value="usa">Rumuigbo</option>
+          <option value="usa">Choba</option>
+        
+        <option value="canada">Rumuokwuta</option>
+        <option value="canada">Rumuola</option>
+        <option value="canada">Rumuagholu</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write comment.." style="height:170px"></textarea>
+        <input type="submit"value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
